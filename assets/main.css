@@ -1,0 +1,24 @@
+@import url("color.css");
+
+body {
+    background: var(--color0);
+    font-family: "BorgSansMono";
+}
+
+.center {
+    margin: 25% auto;
+    display: flex;
+    flex-flow: row;
+}
+
+h1 {
+    margin: auto auto;
+}
+
+a {
+    color: var(--color6);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--colorD);
+}
