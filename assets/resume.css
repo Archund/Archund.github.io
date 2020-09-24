@@ -1,0 +1,252 @@
+:root {
+    --color0: #161b1d;
+    --color1: #1f292e;
+    --color2: #516d7b;
+    --color3: #5a7b8c;
+    --color4: #7195a8;
+    --color5: #7ea2b4;
+    --color6: #c1e4f6;
+    --color7: #ebf8ff;
+    --color8: #d22d72;
+    --color9: #935c25;
+    --colorA: #8a8a0f;
+    --colorB: #568c3b;
+    --colorC: #2d8f6f;
+    --colorD: #257fad;
+    --colorE: #6b6bb8;
+    --colorF: #b72dd2;
+}
+
+:root {
+    --colorDark:    #161b1d;
+    --colorLight:   #ebf8ff;
+    --colorHigh:    #d22d72;
+    --colorAlt1:    #2d8f6f;
+    --colorAlt2:    #b72dd2;
+}
+
+/* -- GENERAL -- */
+
+body {
+    margin: 0;
+
+    /* display: flex;
+    flex-flow: column; */
+
+    font-family: "Borg Sans Mono", monospace;
+    font-weight: bold;
+    letter-spacing: -0.1em;
+    text-align: justify;
+}
+
+/* -- HEADER -- */
+
+div#top-bar {
+    display: flex;
+    height: 20%;
+    padding: .5em;
+    background: var(--colorDark);
+}
+
+/* Info -- */
+
+div#info {
+    width: 66%;
+    display: flex;
+    flex-flow: row;
+    padding-left: 1em;
+}
+
+.name {
+    font-size: 32pt;
+    margin: 0;
+}
+.name-first {
+    color: var(--colorHigh);
+}
+.name-last {
+    color: var(--colorLight);
+}
+
+.miniText {
+    font-size: 18pt;
+    text-align: right;
+}
+
+.level {
+    font-size: 22pt;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    color: var(--colorHigh);
+    margin: .25em;
+    text-align: center;
+}
+
+.desc {
+    font-size: 14pt;
+    color: var(--colorLight);
+    padding: 0 2em 0 0;
+}
+
+.age {
+    color: var(--colorLight);
+    margin-top: 0em;
+}
+
+/* Contact  Info-- */
+
+div#contact-info {
+    /* width: 33%; */
+    margin: auto;
+}
+div#contact-info a {
+    color: var(--colorLight);
+}
+div#contact-info td {
+    /* margin: em; */
+    padding: 0.7em;
+}
+div#contact-info svg {
+    fill: var(--colorLight);
+}
+
+
+/* -- CONTENT -- */
+
+div#content {
+    display: flex;
+    height: auto;
+
+    background: var(--colorLight);
+    color: var(--colorDark);
+    font-size: 16pt;
+}
+
+/* Side Bar -- */
+
+div#left-panel {
+    display: flex;
+    flex-flow: column;
+    width: 38%;
+    padding: 1em;
+
+    background-color: var(--colorDark);
+
+    text-align: center;
+    color: var(--colorLight);
+    padding-top: 0em;
+
+    text-align: center;
+}
+
+div#left-panel .section-header {
+    color: var(--colorLight);
+}
+div#left-panel p{
+    text-align: start;
+}
+
+div#left-panel ul {
+    padding: 0;
+    list-style: none;
+}
+
+div#gamedev li {
+    display: inline;
+}
+div#gamedev img {
+    -webkit-filter: drop-shadow(0px 0px 8px var(--color0));
+    filter: drop-shadow(0px 0px 8px var(--color0));
+}
+
+div#word-cloud {
+    margin-top: 1em;
+    /* display: contents; */
+    display: flex;
+    flex-flow: wrap;
+    font-size: 32pt;
+    text-shadow: 2px 2px 8px var(--color0);
+}
+div#word-cloud p{
+    margin: 0;
+}
+p.a {
+    color: var(--colorLight);
+    writing-mode: horizontal-tb;
+}
+p.b {
+    color: var(--colorAlt1);
+    writing-mode: horizontal-tb;
+}
+p.c {
+    color: var(--colorHigh);
+    writing-mode: vertical-lr;
+}
+p.d {
+    color: var(--colorAlt2);
+    writing-mode: horizontal-tb;
+}
+
+
+/* Main Content -- */
+
+div#main-bar {
+    display:flex;
+    flex-flow: column;
+    padding: 1em;
+    padding-top: 0em;
+}
+
+div#main-bar table {
+    /* margin: 0 auto 1em 0; */
+    width: auto;
+    text-align: start;
+}
+div#main-bar tr:nth-child(2n) td {
+    padding-bottom: 1.5em;
+}
+div#main-bar td:nth-child(1) {  
+    vertical-align: top;
+    text-align: end;
+    white-space: nowrap;
+    color: var(--colorHigh);
+    font-weight: bolder;
+}
+
+div#main-bar ul {
+    list-style: none;
+}
+div#main-bar li {
+    margin-bottom: 1em;
+}
+div#main-bar li::before {
+    content: "\2022"; /* Bullet point */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+
+    color: var(--color8);
+}
+
+div#skills {
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+}
+div#skills div {
+    margin: 0 auto;
+}
+
+.highlight {
+    color: var(--colorHigh);
+}
+
+
+/* -- OTHER -- */
+.rotate-90 {
+    /* position: absolute;
+    transform: rotate(-90deg) translateX(100%) translateY(1400%);
+    transform: rotate(-90deg) translateY(20em);
+    transform-origin: 00% 00%; */
+    writing-mode: sideways-lr;
+}
